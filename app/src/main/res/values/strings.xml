@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Sinav Yardim</string>
+    <string name="hesapolustur">HESAP OLUŞTUR</string>
+    <string name="isim">İsim</string>
+    <string name="KullaniciAdi">Kullanıcı Adı</string>
+    <string name="mailadresi">Mail Adresi (abc@abc.abc)</string>
+    <string name="sifre">Şifre (En az 6 karakter)</string>
+    <string name="sifretekrar">Şifre Tekrarı</string>
+    <string name="kayitol">KAYIT OL</string>
+    <string name="girisedon">Girişe Dön</string>
+    <string name="girisyap">GİRİŞ YAP</string>
+    <string name="google_hesabiyla_baglan">Google Hesabıyla Bağlan</string>
+    <string name="sifreyi_goster">Şifreyi Göster</string>
+    <string name="kayit_ol">KAYIT OL</string>
+    <string name="profil">Profil</string>
+    <string name="home">Home</string>
+    <string name="mesajlar">Mesajlar</string>
+    <string name="ana_sayfa">Ana Sayfa</string>
+    <string name="paylas">Paylaş</string>
+    <string-array name="sinavlar">
+        <item>Sınav Seçiniz...</item>
+        <item>LGS</item>
+        <item>YKS</item>
+        <item>KPSS</item>
+        <item>ALES</item>
+        <item>YDS</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_create_profile">CreateProfile</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="profil_olustur">Profil Oluştur</string>
+    <string name="bio">Bio</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="profilikaydet">PROFİLİ KAYDET</string>
+    <string name="profili_duzenle">Profili Düzenle</string>
+    <string name="profilim">PROFİLİM</string>
+    <string name="sinav">Sinav</string>
+    <string name="cikis_yap">Çıkış Yap</string>
+    <string name="hesabi_sil">Hesabı Sil</string>
+    <string name="soru_sor">Soru Sor</string>
+    <string name="yksanasayfa">YKS ANA SAYFA</string>
+</resources>

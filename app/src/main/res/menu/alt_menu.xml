@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="@string/ana_sayfa"
+        android:icon="@drawable/baseline_home_24"
+        app:showAsAction="always"
+        android:id="@+id/alt_home" />
+
+    <item android:title="@string/paylas"
+        android:icon="@drawable/baseline_mode_24"
+        app:showAsAction="always"
+        android:id="@+id/alt_paylas" />
+
+    <item android:title="@string/mesajlar"
+        android:icon="@drawable/baseline_message_24"
+        app:showAsAction="always"
+        android:id="@+id/alt_mesaj" />
+
+    <item android:title="@string/profil"
+        android:icon="@drawable/baseline_account_circle_24"
+        app:showAsAction="always"
+        android:id="@+id/alt_profil" />
+
+
+</menu>

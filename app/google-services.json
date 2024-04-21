@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "867517148618",
+    "project_id": "sinavyardim-ebee3",
+    "storage_bucket": "sinavyardim-ebee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867517148618:android:769839ae88165db67df333",
+        "android_client_info": {
+          "package_name": "com.ilayda.sinavyardim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9H6smeOOssO99OclPIm6EOp1-C1xur9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

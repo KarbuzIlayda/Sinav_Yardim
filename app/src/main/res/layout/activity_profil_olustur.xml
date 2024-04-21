@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ProfilOlustur" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profili_duzenle"
+        android:textColor="@color/cobalt_blue"
+        android:id="@+id/textViewProfilOlus"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="75dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imviewprofilfoto"
+            android:scaleType="fitCenter"
+            android:background="@drawable/baseline_person_3_24"
+            android:clickable="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/isim"
+        android:id="@+id/edittextisim"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/txt_box"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/KullaniciAdi"
+        android:id="@+id/edittextkullanad"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/txt_box" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mailadresi"
+        android:id="@+id/edittextmail"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/txt_box" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bio"
+        android:id="@+id/edittextbio"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:background="@drawable/txt_box" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnprofilkaydet"
+        android:text="@string/profilikaydet"
+        android:background="@color/cobalt_blue"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progbarprofilkayit"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+
+
+</LinearLayout>

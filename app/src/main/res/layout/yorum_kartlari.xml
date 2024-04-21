@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            app:cardPreventCornerOverlap="false"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/yorumcufoto"
+                android:scaleType="fitCenter"
+                android:background="@drawable/baseline_person_3_24" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yorumcuad"
+        android:hint="@string/KullaniciAdi"
+        android:layout_marginStart="70dp"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp" />
+
+    <ImageButton
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:background="@drawable/post_secenekler"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:rotation="90"
+        android:id="@+id/yorum_opt" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/yorumaciklama"
+            android:hint="Yorum aciklama"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginTop="55dp"
+            android:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardPreventCornerOverlap="false"
+            android:layout_below="@id/yorumaciklama"
+            android:id="@+id/cv_foto" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="350dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/yorumfoto"
+                android:visibility="visible"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cobalt_blue"
+            android:layout_below="@id/cv_foto" >
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/yorumbegen"
+                android:background="@drawable/kalp_icibos"
+                android:layout_marginStart="50dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/yorumbegensayi"
+                android:textSize="20sp"
+                android:hint="100"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yorumyaz"
+                android:background="@drawable/yorum_icibos"
+                android:padding="22dp"
+                android:layout_marginStart="150dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/yorumsayi"
+                android:textSize="20sp"
+                android:hint="100"
+                android:layout_marginStart="196dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yorumtarih"
+                android:textAlignment="textEnd"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="320dp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

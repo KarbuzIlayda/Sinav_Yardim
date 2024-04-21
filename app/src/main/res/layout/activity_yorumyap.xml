@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints"
+    tools:context=".YorumYapActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Yorumlar"
+        android:textSize="20sp"
+        android:background="@color/cobalt_blue"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardPreventCornerOverlap="false">
+
+            <ImageView
+                android:id="@+id/yorumpp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/baseline_person_3_24"
+                android:scaleType="fitCenter" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/et_yorumyaz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="45dp"
+            android:hint="Yorum yaz...."
+            android:lineBreakWordStyle="none"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Fotoğraf seçiniz: "
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        android:id="@+id/fotogir"
+        android:padding="5dp"
+        android:clickable="false" />
+
+    <ImageView
+        android:id="@+id/yorumfoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:cropToPadding="true"
+        android:background="@drawable/baseline_add_a_photo_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@id/fotogir"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <Button
+        android:id="@+id/btn_yorumgonder"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@color/cobalt_blue"
+        android:padding="5dp"
+        android:text="Gönder"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_yorumlar"
+        app:layout_constraintTop_toBottomOf="@id/yorumfoto"
+        tools:layout_editor_absoluteX="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

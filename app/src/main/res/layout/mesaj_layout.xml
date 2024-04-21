@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="mesaj"
+        android:textColor="@color/black"
+        android:layout_margin="2dp"
+        android:id="@+id/alici_mesaj"
+        android:background="@drawable/alici_mesaj_arka"
+        android:textSize="20sp"
+        android:paddingBottom="25dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alicigonderim"
+        android:layout_gravity="top"
+        android:hint="saat"
+        android:layout_marginTop="-28dp"
+        android:layout_marginStart="20dp"
+        android:textSize="16dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="mesaj"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="2dp"
+        android:layout_gravity="end"
+        android:id="@+id/gonderici_mesaj"
+        android:background="@drawable/gonderici_mesaj_arka"
+        android:textSize="20sp"
+        android:paddingBottom="25dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gonderilsaat"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_gravity="end"
+        android:hint="saat"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gorulme_oku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="✓✓"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="12dp" />
+
+
+</LinearLayout>
